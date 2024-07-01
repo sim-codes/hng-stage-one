@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #101010;
+    color: #fff;
+    min-height: 90vh;
+    min-width: 90vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap-reverse;
+}
+
+.display-name {
+    font-style: italic;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.d-name {
+    color: #DDF247;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #101010;
+    border-top: 1px solid #DDF247;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #F4F4F2;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #DDF247;
+}
+
+.goals {
+    margin: 1rem 0;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
